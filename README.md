@@ -88,7 +88,6 @@ ten.roman() // X
 ten.morseCode() // • − − − −   − − − − −
 ten.negative() // -10
 ten.positive() // 10
-ten.loud() // TEN
 five.md5() // d3d9446802a44259755d38e6d163e820
 ```
 
