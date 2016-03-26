@@ -232,6 +232,7 @@ ten.async(function(err, ten) {
 ##### Unicode
 ```javascript
 ten.oclock(); // '🕙'
+ten.timestenemoji(); // 💯
 ```
 
 ### Development
