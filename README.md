@@ -54,6 +54,13 @@ ten.scientificNotation(3.14159, 7) // 31415900
 ten.roundToTenth(4.20691); // 4.2
 ten.valueOf(); // 10
 ten.fraction(); // 10 / 1
+ten.factorial(); // 3628800
+ten.sqrt(); // 3.162278
+ten.log(); // 1
+ten.naturallog(); // 2.302585
+ten.sin() // -0.5440211
+ten.cos("deg"); // 0.9848078
+ten.tan("rad"); // 0.6483608
 ```
 
 ##### Chemistry of 10 (Neon)
@@ -199,6 +206,7 @@ ten.camel(); // Ten
 ten.loud(); // TEN
 ten.quiet(); // ten
 ten.inverseCamel(); // tEN
+ten.letter(); // j
 ```
 
 ##### Assertion

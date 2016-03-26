@@ -43,12 +43,20 @@
 	ten.tenlist = function() { return ten.arrayNum(10); };
 	ten.tenlist2d = function() { return ten.arrayNum(10); };
 	ten.tenlist3d = function() { return ten.arrayNum(10); };
+	ten.letter = function() { return "j"; };
+	ten.factorial = function() { return 3628800; };
+	ten.sqrt = function() { return Math.sqrt(10); };
+	ten.log = function() { return 1; };
+	ten.naturallog = function() { return 2.302585; };
+	ten.sin = function(degorrad) {if(degorrad == "deg") { return 0.1736482; } else { return -0.5440211; }; };
+	ten.cos = function(degorrad) {if(degorrad == "deg") { return 0.9848078; } else { return -0.8390715; }; };
+	ten.tan = function(degorrad) {if(degorrad == "deg") { return 0.176327;  } else { return 0.6483608; }; };
 	ten.timestenemoji = function() { return "💯"; };
 
 	ten.circleArea = function() { return (Math.PI * 100); };
 	ten.circleCircumference = function() { return (Math.PI * 20); };
 	ten.circleDiameter = function() { return 20; };
-
+	ten.circleRadius = function() { return 10; };
 
 	ten.rgbRed = function() { return "rgb(10, 0, 0)"; };
 	ten.rgbGreen = function() { return "rgb(0, 10, 0"; };
