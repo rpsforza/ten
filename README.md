@@ -98,7 +98,7 @@ ten.positive() // 10
 five.md5() // d3d9446802a44259755d38e6d163e820
 ```
 
-##### 10 goes multilingual
+##### 10 in ```ten.times(8.8);``` Languages
 ```javascript
 ten.albanian() // dhjetë
 ten.basque() // hamar
