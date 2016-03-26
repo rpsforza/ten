@@ -74,6 +74,14 @@ ten.rgbAll(); // rgb(10, 10, 10)
 ten.rgbReverse(); //rgb(245, 245, 245)
 ```
 
+##### Circles of Radius 10
+```javascript
+ten.circleArea(); // 314.1592653589793
+ten.circleCircumference(); // 62.83185307179586
+ten.circleDiameter(); // 20 
+ten.circleRadius(); //10
+```
+
 ##### Different sorts of 10
 ```javascript
 ten.roman() // X
