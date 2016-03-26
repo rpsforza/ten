@@ -3,8 +3,8 @@
 
 	ten.toPower = function(num) {return (Math.pow(10, num)); };
 	ten.isTen = function(num) {if(num == 10 || num.toString().toLowerCase() == "ten" || num == "X") {return true;} else {return false;}};
-	ten.isLessThan = function(num) { return (num < 10); };
-	ten.isGreaterThan = function(num) { return (num > 10); };
+	ten.isLessThan = function(num) { return (num > 10); };
+	ten.isGreaterThan = function(num) { return (num < 10); };
 	ten.minus = function(num) { return (10 - num); }; 
 	ten.plus = function(num) { return (10 + num); };
 	ten.times = function(num) { return (10 * num); };
@@ -20,6 +20,7 @@
 	ten.inverseCamel = function() { return "tEN"; };
 	ten.roman = function() { return 'X'; };
 	ten.morse = function() { return "• − − − −   − − − − −"; };
+	ten.oclock = function() { return "🕙";};
 	ten.negative = function() { return -10; };
 	ten.positive = function() { return 10; };
 	ten.base = function(num) { return ten().toString(num); }
@@ -42,6 +43,11 @@
 	ten.tenlist = function() { return ten.arrayNum(10); };
 	ten.tenlist2d = function() { return ten.arrayNum(10); };
 	ten.tenlist3d = function() { return ten.arrayNum(10); };
+	ten.timestenemoji = function() { return "💯"; };
+
+	ten.circleArea = function() { return (Math.PI * 100); };
+	ten.circleCircumference = function() { return (Math.PI * 20); };
+	ten.circleDiameter = function() { return 20; };
 
 
 	ten.rgbRed = function() { return "rgb(10, 0, 0)"; };
@@ -147,7 +153,11 @@
 	ten.haitiancreole = function() { return langs[86]; };
 	ten.latin = function() { return langs[87]; };
 	
-
+	ten.async = function(callback) {
+	    process.nextTick(function() {
+	      callback(null, ten());
+	    });
+	  };
 
 	if(typeof module !== 'undefined' && module.exports) {
 	module.exports = ten;
