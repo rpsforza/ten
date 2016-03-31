@@ -18,6 +18,7 @@
 	ten.quiet = function() { return "ten"; };
 	ten.camel = function() { return "Ten"; };
 	ten.inverseCamel = function() { return "tEN"; };
+    ten.time = function() { return "10:00" };
 	ten.roman = function() { return 'X'; };
 	ten.morse = function() { return "• − − − −   − − − − −"; };
 	ten.oclock = function() { return "🕙";};
@@ -168,10 +169,10 @@
 	  };
 
 	if (typeof module !== 'undefined' && module.exports) {
-		module.exports = ten;
+	    module.exports = ten;
 	} else if (typeof define === 'function' && define.amd){
-		define(ten);
+	    define(ten);
 	} else if (window) {
-		window.ten = ten;
+	    window.ten = ten;
 	}
 }());

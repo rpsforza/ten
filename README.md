@@ -91,6 +91,7 @@ ten.circleRadius(); //10
 
 ##### Different sorts of 10
 ```javascript
+ten.time() // 10:00
 ten.roman() // X
 ten.morseCode() // • − − − −   − − − − −
 ten.negative() // -10
