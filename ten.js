@@ -2,7 +2,7 @@
 	var ten = function() { return 10; };
 
 	ten.toPower = function(num) {return (Math.pow(10, num)); };
-	ten.isTen = function(num) {if(num == 10 || num.toString().toLowerCase() == "ten" || num == "X") {return true;} else {return false;}};
+	ten.isTen = function(num) { return (num == 10 || num.toString().toLowerCase() == "ten" || num == "X"); };
 	ten.isLessThan = function(num) { return (num > 10); };
 	ten.isGreaterThan = function(num) { return (num < 10); };
 	ten.minus = function(num) { return (10 - num); }; 
@@ -11,8 +11,8 @@
 	ten.over = function(num) { return (10 / num); };
 	ten.splitArray = function() { return [1, 0]; };
 	ten.array = function() { return [10]; };
-	ten.isFactor = function(num) { if(10 % num == 0) { return true; } else {return false;}};
-	ten.isMultiple = function(num) { if(num % 10 == 0) { return true; } else {return false;}};
+	ten.isFactor = function(num) { return (10 % num == 0); };
+	ten.isMultiple = function(num) { return (num % 10 == 0); };
 	ten.string = function() { return "ten"; };
 	ten.loud = function() { return "TEN"; };
 	ten.quiet = function() { return "ten"; };
@@ -48,9 +48,9 @@
 	ten.sqrt = function() { return Math.sqrt(10); };
 	ten.log = function() { return 1; };
 	ten.naturallog = function() { return 2.302585; };
-	ten.sin = function(degorrad) {if(degorrad == "deg") { return 0.1736482; } else { return -0.5440211; }; };
-	ten.cos = function(degorrad) {if(degorrad == "deg") { return 0.9848078; } else { return -0.8390715; }; };
-	ten.tan = function(degorrad) {if(degorrad == "deg") { return 0.176327;  } else { return 0.6483608; }; };
+	ten.sin = function(degorrad) { return (degorrad == "deg") ? 0.1736482 : -0.5440211; };
+	ten.cos = function(degorrad) { return (degorrad == "deg") ? 0.9848078 : -0.8390715; };
+	ten.tan = function(degorrad) { return (degorrad == "deg") ? 0.176327 : 0.6483608; };
 	ten.timestenemoji = function() { return "💯"; };
 
 	ten.circleArea = function() { return (Math.PI * 100); };
@@ -167,11 +167,11 @@
 	    });
 	  };
 
-	if(typeof module !== 'undefined' && module.exports) {
-	module.exports = ten;
+	if (typeof module !== 'undefined' && module.exports) {
+		module.exports = ten;
 	} else if (typeof define === 'function' && define.amd){
-	define(ten);
+		define(ten);
 	} else if (window) {
-	window.ten = ten;
+		window.ten = ten;
 	}
 }());
